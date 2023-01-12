@@ -1,0 +1,176 @@
+
+
+.answer{
+    width:34%;
+    height: 60px;
+}
+
+body {
+    color: #082B48;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.5;
+    background-color: #fffff9;
+    width:80%;
+    margin: 0 auto;
+}
+
+h1{
+    font-family:"ヒラギノ丸ゴ Pro W4","ヒラギノ丸ゴ Pro","Hiragino Maru Gothic Pro","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","HG丸ｺﾞｼｯｸM-PRO","HGMaruGothicMPRO";
+}
+
+
+a {
+    text-decoration: none;
+    color: #082B48;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+/* ヘッダーのCSS */
+header{margin-top: 10px;}
+
+.header-title-eigo{
+    font-size: 45px;
+    color: #b658c4;
+    font-weight: 1000;
+}
+.header-title-kokugo{
+    font-size: 45px;
+    color: #cc1508;
+    font-weight: 1000;
+}
+.header-title-sugaku{
+    font-size: 45px;
+    color: #8690c2;
+    font-weight: 1000;
+}
+.header-title-syakai{
+    font-size: 45px;
+    color: #02a842;
+    font-weight: 1000;
+}
+.header-title-rika{
+    font-size: 45px;
+    color: #c2cf13;
+    font-weight: 1000;
+}
+
+
+.header-left{
+    float: left;
+}
+.header-right{
+    float: right;
+}
+
+li { list-style: none;}
+
+.header-nav-item{
+    float: left;
+    margin-left: 23px;
+    list-style: none;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 15px;
+}
+
+.subject{
+    width: 70px;
+}
+
+.clear::after{
+    content:"";
+    clear: both;
+    display: block;
+}
+
+.question{
+    background-image: url(img/zabuton_notebook.png);
+    background-size: 90%;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 300px;
+    width: 45%;
+    margin-top: 75px;
+    margin-left: 20%;
+    text-align: center;
+    padding-top: 110px;
+    font-size: 22px;
+    font-weight: 550;
+}
+
+.choices{
+    margin-top: 20px;
+    text-align: center;
+    margin-right: 15%;
+}
+.btn-1{
+    background-color: rgba(255, 255, 255, 1);
+    margin: 3px 2px;
+    border-radius: 7px;
+    font-size: 22px;
+    font-weight: 500;
+    border-color: green;
+}
+
+.swal-overlay {
+  background-color: rgba(200, 200, 200, 0.00);
+}
+
+.swal-button{
+    text:'OK';
+}
+
+.swal-modal {
+  background-color: rgba(255,255,255,1);
+  border: 0.5px solid gray;
+}
+
+.swal-button{
+    display: none;
+}
+
+.fa-snowflake {
+    animation: fall linear forwards;
+    color: white;
+    position: absolute;
+    transform-origin: left bottom;
+    top: 0;
+    z-index: -1;
+}
+
+.fa-grip-lines-vertical{
+    animation: fall linear forwards;
+    color: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    transform-origin: left bottom;
+    top: 0;
+    z-index: -1;
+}
+
+@keyframes fall {
+    0% {
+        opacity: 0.9;
+        transform: translateY(0vh) rotate(0deg);
+    }
+    100% {
+        transform: translateY(105vh) rotate(200deg);
+        opacity: 0;
+    }
+}
+
+#neko{
+  width:140px;
+  position: absolute;
+  top: 300px;
+  right: 300px;
+  z-index: 1;
+    }
+#nekoneko{
+    width: 210px;
+    position: absolute;
+    top: 320px;
+    right: 254px;
+    z-index: 2;
+}
